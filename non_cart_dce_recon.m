@@ -3,7 +3,8 @@
 tic;
 clc;
 clear;
-addpath(genpath('/working/larson/xzhu/code'));
+addpath(genpath('../mc_recon'));
+%% addpath('../data');
 load nocart_dce_data.mat;
 load smap_dce.mat;
 smap = squeeze(readcfl('smap_dce'));
