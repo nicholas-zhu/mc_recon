@@ -1,0 +1,727 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+Your MATLAB session has timed out.  All license keys have been returned.
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+Start Affine part of Non-Rigid registration
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1                   0    
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Line search cannot find an acceptable point along the current search
+        iterations : 1
+        Function Count : 3
+        Minimum found : 0
+        Intern Time : 0.075139 seconds
+        Total Time : 0.30586 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1                   0    
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Line search cannot find an acceptable point along the current search
+        iterations : 1
+        Function Count : 3
+        Minimum found : 0
+        Intern Time : 0.002459 seconds
+        Total Time : 0.10867 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1                   0    
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Line search cannot find an acceptable point along the current search
+        iterations : 1
+        Function Count : 3
+        Minimum found : 0
+        Intern Time : 0.002085 seconds
+        Total Time : 0.12064 seconds
+Start non-rigid b-spline grid registration
+Current Grid size : 19x24
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         5.38787e-16    
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 1
+        Function Count : 7
+        Minimum found : 4.5425e-16
+        Intern Time : 0.033921 seconds
+        Total Time : 0.99626 seconds
+Registration Refinement
+Current Grid size : 34x44
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         5.51181e-15    
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 1
+        Function Count : 6
+        Minimum found : 5.488e-15
+        Intern Time : 0.008265 seconds
+        Total Time : 1.6071 seconds
+Registration Refinement
+Current Grid size : 64x84
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         7.34435e-14    
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 1
+        Function Count : 20
+        Minimum found : 7.3051e-14
+        Intern Time : 0.012124 seconds
+        Total Time : 6.6699 seconds
+Elapsed time is 11.684595 seconds.
+Start Affine part of Non-Rigid registration
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         3.75815e-05    
+         1          10           2         3.74911e-05             200
+         2          13           3         3.70891e-05               1
+         3          16           4         3.69656e-05               1
+         4          19           5         3.69349e-05               1
+         5          22           6         3.68208e-05               1
+         6          27           7         3.58589e-05               4
+         7          32           8         3.57642e-05             0.1
+         8          35           9         3.57055e-05               1
+         9          38          10         3.54552e-05               1
+        10          41          11          3.5399e-05               1
+        11          44          12         3.53536e-05               1
+        12          47          13         3.52983e-05               1
+        13          50          14         3.52559e-05               1
+        14          53          15           3.518e-05               1
+        15          56          16         3.50954e-05               1
+        16          59          17         3.48941e-05               1
+        17          62          18         3.48244e-05               1
+        18          65          19         3.47884e-05               1
+        19          68          20         3.47799e-05               1
+        20          71          21         3.47763e-05               1
+        21          74          22         3.47737e-05               1
+        22          77          23         3.47669e-05               1
+        23          80          24         3.47609e-05               1
+        24          83          25         3.47517e-05               1
+        25          86          26         3.47481e-05               1
+        26          89          27         3.47479e-05               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 27
+        Function Count : 94
+        Minimum found : 3.4748e-05
+        Intern Time : 0.10283 seconds
+        Total Time : 3.4258 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         3.73593e-05    
+         1          14           2         3.73221e-05            1820
+         2          17           3         3.72578e-05               1
+         3          20           4         3.72469e-05               1
+         4          23           5         3.72331e-05               1
+         5          26           6         3.72204e-05               1
+         6          29           7         3.72115e-05               1
+         7          32           8         3.72007e-05               1
+         8          35           9         3.71979e-05               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 9
+        Function Count : 38
+        Minimum found : 3.7197e-05
+        Intern Time : 0.016538 seconds
+        Total Time : 1.3207 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000212339    
+         1          12           2         0.000210499             605
+         2          15           3         0.000206426               1
+         3          18           4         0.000202863               1
+         4          23           5         0.000178354               2
+         5          26           6         0.000175868               1
+         6          29           7         0.000174271               1
+         7          32           8         0.000173897               1
+         8          35           9         0.000173775               1
+         9          38          10         0.000173754               1
+        10          41          11         0.000173751               1
+        11          44          12          0.00017375               1
+        12          47          13          0.00017375               1
+        13          58          14         0.000173688         9.13985
+        14          65          15         0.000173688       0.0138698
+        15          68          16         0.000173665               1
+        16          71          17         0.000173631               1
+        17          74          18         0.000173628               1
+        18          77          19         0.000173628               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 19
+        Function Count : 80
+        Minimum found : 0.00017363
+        Intern Time : 0.041426 seconds
+        Total Time : 2.9231 seconds
+Start non-rigid b-spline grid registration
+Current Grid size : 19x24
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         1.39468e-06    
+         1          17           2         1.14751e-06     1.42159e+06
+         2          22           3         1.01066e-06         1.40334
+         3          27           4           9.257e-07         1.78818
+         4          32           5         8.70046e-07         1.70805
+         5          37           6         8.33797e-07         1.63111
+         6          42           7         8.08819e-07         1.71072
+         7          47           8         7.90222e-07         1.83533
+         8          52           9         7.76498e-07         1.79303
+         9          57          10         7.66115e-07          1.8047
+        10          62          11         7.58834e-07         1.68973
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 11
+        Function Count : 67
+        Minimum found : 7.5344e-07
+        Intern Time : 0.032992 seconds
+        Total Time : 5.2358 seconds
+Registration Refinement
+Current Grid size : 34x44
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000112354    
+         1          16           2         8.75156e-05          538709
+         2          21           3         8.25632e-05         1.50446
+         3          26           4         8.01114e-05         1.49825
+         4          31           5         7.84395e-05         1.95475
+         5          36           6         7.75122e-05         1.38778
+         6          42           7          7.6767e-05         2.04335
+         7          47           8         7.63439e-05         1.67571
+         8          52           9         7.60815e-05         1.49343
+         9          57          10         7.58666e-05          1.6419
+        10          63          11         7.56748e-05         2.04147
+        11          68          12         7.55523e-05         1.71779
+        12          74          13         7.54526e-05         2.35381
+        13          80          14          7.5376e-05          2.2863
+        14          85          15         7.53319e-05         1.81786
+        15          90          16         7.53008e-05         1.73493
+        16          96          17         7.52698e-05         2.11719
+        17         101          18         7.52439e-05         1.80115
+        18         106          19         7.52273e-05         1.12819
+        19         111          20          7.5214e-05         1.36987
+        20         117          21         7.51958e-05         2.44909
+        21         122          22         7.51793e-05         1.84953
+        22         127          23         7.51663e-05         1.32319
+        23         132          24         7.51528e-05           1.467
+        24         137          25         7.51403e-05         1.30991
+        25         142          26         7.51256e-05          1.3403
+        26         147          27          7.5111e-05         1.42264
+        27         152          28         7.50978e-05         1.68361
+        28         157          29         7.50843e-05         1.80699
+        29         163          30         7.50717e-05         2.21314
+        30         168          31         7.50604e-05         1.77385
+        31         173          32         7.50502e-05         1.64185
+        32         178          33         7.50414e-05          1.3358
+        33         183          34         7.50332e-05         1.40151
+        34         188          35         7.50279e-05         1.20018
+        35         193          36         7.50254e-05               1
+        36         198          37         7.50233e-05               1
+        37         203          38         7.50215e-05         1.08939
+        38         208          39           7.502e-05               1
+        39         213          40         7.50194e-05               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 40
+        Function Count : 218
+        Minimum found : 7.5018e-05
+        Intern Time : 0.12503 seconds
+        Total Time : 35.5706 seconds
+Registration Refinement
+Current Grid size : 64x84
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000149738    
+         1          16           2         0.000148531          230309
+         2          21           3         0.000148077         1.51761
+         3          26           4         0.000147617         1.82637
+         4          31           5         0.000147425               1
+         5          36           6         0.000147246         1.56843
+         6          42           7         0.000147115         2.02724
+         7          47           8         0.000147023         1.45662
+         8          52           9         0.000146947         1.50676
+         9          57          10         0.000146877         1.60033
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 10
+        Function Count : 62
+        Minimum found : 0.00014683
+        Intern Time : 0.061578 seconds
+        Total Time : 27.0594 seconds
+Elapsed time is 76.446670 seconds.
+Start Affine part of Non-Rigid registration
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         8.16628e-05    
+         1          12           2         8.08108e-05             605
+         2          15           3         7.97112e-05               1
+         3          20           4          7.9047e-05               4
+         4          23           5          7.7917e-05               1
+         5          26           6         7.77199e-05               1
+         6          29           7         7.76575e-05               1
+         7          32           8          7.7609e-05               1
+         8          35           9         7.75964e-05               1
+         9          38          10         7.75484e-05               1
+        10          41          11         7.74774e-05               1
+        11          44          12         7.73734e-05               1
+        12          47          13         7.72015e-05               1
+        13          52          14         7.71058e-05        0.170144
+        14          57          15          7.6995e-05        0.380068
+        15          60          16         7.69405e-05               1
+        16          63          17         7.69328e-05               1
+        17          66          18          7.6929e-05               1
+        18          69          19         7.69264e-05               1
+        19          72          20         7.69216e-05               1
+        20          75          21         7.69202e-05               1
+        21          78          22         7.69159e-05               1
+        22          81          23         7.69142e-05               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 23
+        Function Count : 84
+        Minimum found : 7.6913e-05
+        Intern Time : 0.051984 seconds
+        Total Time : 2.9635 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         8.02991e-05    
+         1          14           2         8.02043e-05            1820
+         2          17           3         8.00715e-05               1
+         3          20           4         8.00447e-05               1
+         4          23           5          8.0038e-05               1
+         5          26           6         8.00172e-05               1
+         6          29           7         8.00027e-05               1
+         7          38           8         7.98974e-05         5.51298
+         8          45           9          7.9881e-05            0.01
+         9          48          10          7.9855e-05               1
+        10          51          11         7.98417e-05               1
+        11          54          12         7.98144e-05               1
+        12          57          13         7.97992e-05               1
+        13          60          14         7.97825e-05               1
+        14          63          15         7.97802e-05               1
+        15          66          16         7.97784e-05               1
+        16          69          17         7.97766e-05               1
+        17          72          18         7.97755e-05               1
+        18          75          19         7.97723e-05               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 19
+        Function Count : 78
+        Minimum found : 7.9771e-05
+        Intern Time : 0.031235 seconds
+        Total Time : 2.6665 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000316803    
+         1          10           2         0.000313558             200
+         2          13           3         0.000295232               1
+         3          18           4         0.000284095        0.425549
+         4          21           5         0.000280223               1
+         5          24           6         0.000271927               1
+         6          27           7         0.000271487               1
+         7          30           8         0.000270726               1
+         8          33           9         0.000270504               1
+         9          36          10         0.000270342               1
+        10          39          11         0.000269785               1
+        11          42          12         0.000269671               1
+        12          45          13         0.000269438               1
+        13          50          14         0.000269431        0.433281
+        14          53          15          0.00026943               1
+        15          56          16          0.00026943               1
+        16          61          17          0.00026943        0.183408
+        17          66          18          0.00026943        0.216002
+        18          75          19          0.00026943       0.0190966
+        19          78          20         0.000269429               1
+        20          85          21         0.000269429        0.065396
+        21          88          22         0.000269429               1
+        22          91          23         0.000269429               1
+        23         104          24         0.000269429        0.600216
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 24
+        Function Count : 117
+        Minimum found : 0.00026943
+        Intern Time : 0.048066 seconds
+        Total Time : 3.8516 seconds
+Start non-rigid b-spline grid registration
+Current Grid size : 19x24
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         4.39512e-06    
+         1          17           2         3.41688e-06     1.25184e+06
+         2          22           3         3.09794e-06         1.10624
+         3          27           4         2.95007e-06         1.77399
+         4          32           5         2.85763e-06         1.64527
+         5          37           6         2.80071e-06         1.63866
+         6          42           7         2.76436e-06         1.55891
+         7          47           8         2.74011e-06         1.78887
+         8          52           9         2.72432e-06         1.71457
+         9          57          10         2.71526e-06         1.63613
+        10          63          11          2.7081e-06         2.03012
+        11          68          12           2.703e-06         1.84556
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 12
+        Function Count : 74
+        Minimum found : 2.6983e-06
+        Intern Time : 0.027258 seconds
+        Total Time : 5.6608 seconds
+Registration Refinement
+Current Grid size : 34x44
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000179566    
+         1          16           2         0.000144328          574201
+         2          21           3          0.00013516         1.89106
+         3          26           4         0.000131393         1.54257
+         4          31           5         0.000129272          1.3739
+         5          37           6         0.000127655          2.2776
+         6          43           7         0.000126494         2.47367
+         7          48           8         0.000125567         1.96758
+         8          53           9         0.000124932         1.80224
+         9          58          10         0.000124528         1.60503
+        10          63          11         0.000124149         1.90927
+        11          68          12         0.000123827          1.6182
+        12          73          13         0.000123636         1.46806
+        13          79          14         0.000123459         2.02886
+        14          84          15          0.00012332         1.69057
+        15          89          16         0.000123222         1.47736
+        16          94          17         0.000123156         1.38462
+        17          99          18         0.000123119               1
+        18         104          19         0.000123083         1.58593
+        19         110          20         0.000123049         2.17003
+        20         115          21         0.000123026          1.3588
+        21         120          22         0.000123003         1.87863
+        22         125          23         0.000122982         1.82717
+        23         130          24          0.00012296          1.7288
+        24         136          25         0.000122934         2.26174
+        25         142          26         0.000122904               3
+        26         148          27         0.000122851         2.89823
+        27         154          28         0.000122814         2.40755
+        28         159          29         0.000122787         1.90386
+        29         164          30          0.00012277         1.31169
+        30         169          31         0.000122761         1.28338
+        31         174          32         0.000122758               1
+        32         179          33         0.000122758             0.5
+        33         184          34         0.000122758             0.5
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 34
+        Function Count : 210
+        Minimum found : 0.00012276
+        Intern Time : 0.10461 seconds
+        Total Time : 32.1228 seconds
+Registration Refinement
+Current Grid size : 64x84
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000210846    
+         1          15           2         0.000208821          173070
+         2          20           3         0.000208117         1.02887
+         3          26           4         0.000207224         5.02087
+         4          31           5         0.000206751         1.07085
+         5          36           6         0.000206667               1
+         6          41           7          0.00020653         1.41534
+         7          47           8         0.000206374         1.92325
+         8          52           9         0.000206164         1.39158
+         9          57          10         0.000206063         1.18915
+        10          62          11         0.000205955         1.69944
+        11          67          12         0.000205893         1.48748
+        12          73          13         0.000205813         2.27163
+        13          79          14         0.000205751          2.4668
+        14          85          15         0.000205683         2.10159
+        15          91          16         0.000205549         2.07739
+        16          96          17           0.0002055         1.43718
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 17
+        Function Count : 101
+        Minimum found : 0.00020547
+        Intern Time : 0.11985 seconds
+        Total Time : 44.4091 seconds
+Elapsed time is 92.582039 seconds.
+Start Affine part of Non-Rigid registration
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         7.83226e-05    
+         1          12           2         7.75366e-05             605
+         2          15           3         7.64583e-05               1
+         3          20           4         7.58192e-05               4
+         4          23           5         7.47211e-05               1
+         5          26           6         7.43833e-05               1
+         6          29           7         7.42093e-05               1
+         7          32           8         7.40975e-05               1
+         8          35           9         7.38471e-05               1
+         9          38          10          7.3498e-05               1
+        10          43          11          7.3298e-05             0.1
+        11          46          12         7.31402e-05               1
+        12          49          13         7.30414e-05               1
+        13          52          14         7.30135e-05               1
+        14          55          15         7.29385e-05               1
+        15          58          16         7.28547e-05               1
+        16          61          17         7.27702e-05               1
+        17          64          18         7.27484e-05               1
+        18          67          19         7.27457e-05               1
+        19          70          20         7.27434e-05               1
+        20          73          21         7.27409e-05               1
+        21          76          22         7.27361e-05               1
+        22          79          23         7.27178e-05               1
+        23          84          24         7.27092e-05         0.46247
+        24          89          25         7.27067e-05        0.508363
+        25          92          26         7.27056e-05               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 26
+        Function Count : 95
+        Minimum found : 7.2706e-05
+        Intern Time : 0.05728 seconds
+        Total Time : 3.4788 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         7.71298e-05    
+         1          14           2         7.69996e-05            1820
+         2          17           3         7.68422e-05               1
+         3          20           4         7.68222e-05               1
+         4          23           5         7.68098e-05               1
+         5          26           6         7.67841e-05               1
+         6          29           7         7.67742e-05               1
+         7          32           8         7.67621e-05               1
+         8          35           9         7.67414e-05               1
+         9          38          10         7.67108e-05               1
+        10          43          11         7.67016e-05        0.474986
+        11          46          12         7.66983e-05               1
+        12          49          13          7.6696e-05               1
+        13          52          14         7.66955e-05               1
+        14          55          15         7.66943e-05               1
+        15          58          16         7.66918e-05               1
+        16          61          17         7.66912e-05               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 17
+        Function Count : 64
+        Minimum found : 7.6691e-05
+        Intern Time : 0.025378 seconds
+        Total Time : 2.3491 seconds
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000309691    
+         1          12           2          0.00030584             605
+         2          15           3         0.000298871               1
+         3          18           4         0.000296644               1
+         4          21           5         0.000290363               1
+         5          24           6         0.000288339               1
+         6          27           7         0.000287362               1
+         7          30           8          0.00028698               1
+         8          33           9         0.000286537               1
+         9          36          10         0.000286239               1
+        10          39          11         0.000285951               1
+        11          42          12         0.000285536               1
+        12          45          13         0.000285443               1
+        13          48          14         0.000285438               1
+        14          51          15         0.000285421               1
+        15          54          16          0.00028542               1
+        16          57          17          0.00028542               1
+        17          66          18          0.00028542         1.21264
+        18          75          19          0.00028542      0.00571466
+        19          78          20          0.00028542               1
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 20
+        Function Count : 81
+        Minimum found : 0.00028542
+        Intern Time : 0.036416 seconds
+        Total Time : 3.1378 seconds
+Start non-rigid b-spline grid registration
+Current Grid size : 19x24
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         3.47085e-06    
+         1          17           2         2.74152e-06     1.24536e+06
+         2          22           3         2.42744e-06         1.34297
+         3          27           4         2.24604e-06         1.68514
+         4          32           5         2.12314e-06         1.73366
+         5          37           6         2.05004e-06         1.51744
+         6          42           7         2.00368e-06         1.52207
+         7          47           8         1.97405e-06         1.59901
+         8          52           9          1.9533e-06         1.66046
+         9          57          10         1.94087e-06         1.34806
+        10          62          11         1.93072e-06         1.73199
+        11          67          12         1.92346e-06         1.32032
+        12          72          13         1.91814e-06         1.42461
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in the objective function value was less than the specified tolerance TolFun.
+        iterations : 13
+        Function Count : 77
+        Minimum found : 1.9135e-06
+        Intern Time : 0.031939 seconds
+        Total Time : 6.1484 seconds
+Registration Refinement
+Current Grid size : 34x44
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000188039    
+         1          17           2         0.000144404          647982
+         2          22           3         0.000136004         1.32894
+         3          27           4         0.000132003         1.47884
+         4          33           5         0.000128853         2.50769
+         5          39           6         0.000126537         2.04981
+         6          44           7         0.000125119         1.73526
+         7          50           8         0.000123981         2.22048
+         8          55           9         0.000123275         1.48713
+         9          60          10         0.000122863         1.53827
+        10          65          11         0.000122532         1.97862
+        11          71          12         0.000122222         2.10229
+        12          77          13         0.000121934         2.13033
+        13          82          14         0.000121774         1.74252
+        14          87          15         0.000121626         1.88295
+        15          92          16         0.000121505         1.78046
+        16          98          17         0.000121422         2.23264
+        17         104          18         0.000121316               3
+        18         109          19         0.000121208         1.00692
+        19         114          20          0.00012111               1
+        20         119          21         0.000121047         1.29013
+        21         124          22         0.000121013         1.31461
+        22         129          23         0.000120995         1.63693
+        23         134          24         0.000120983         1.58598
+        24         139          25         0.000120971          1.1891
+        25         144          26         0.000120962               1
+        26         149          27         0.000120942          1.2814
+        27         154          28          0.00012092           1.617
+        28         159          29         0.000120912         1.47041
+        29         164          30         0.000120901         1.72491
+        30         169          31         0.000120882         1.81027
+        31         174          32         0.000120865         1.66368
+        32         179          33         0.000120859         1.88872
+        33         185          34         0.000120852         2.37746
+        34         190          35         0.000120843         1.33168
+        35         195          36         0.000120833         1.39929
+        36         200          37         0.000120827         1.28772
+        37         205          38         0.000120824               1
+        38         210          39         0.000120823               1
+        39         215          40         0.000120822               1
+        40         220          41         0.000120819               1
+        41         225          42         0.000120813         1.21589
+        42         230          43         0.000120804          1.8081
+        43         235          44           0.0001208          1.3466
+        44         241          45         0.000120797               3
+        45         247          46          0.00012079         3.73144
+        46         252          47         0.000120787         1.45286
+        47         259          48         0.000120775         9.06984
+        48         264          49         0.000120772               1
+        49         269          50         0.000120771             0.5
+        50         274          51          0.00012077               1
+        51         279          52         0.000120766         1.56728
+        52         284          53         0.000120763               1
+        53         290          54         0.000120758         2.34176
+        54         295          55         0.000120757         1.23909
+        55         300          56         0.000120757             0.5
+        56         305          57         0.000120757               1
+        57         310          58         0.000120756               1
+        58         315          59         0.000120755               1
+        59         320          60         0.000120751         1.44369
+        60         326          61         0.000120747               3
+        61         331          62         0.000120745         1.24659
+        62         336          63         0.000120743         1.45983
+        63         341          64          0.00012074         1.71557
+        64         347          65         0.000120736         2.69647
+        65         352          66         0.000120735               1
+        66         357          67         0.000120732         1.29269
+        67         362          68         0.000120731               1
+        68         367          69         0.000120728         1.27238
+        69         372          70         0.000120723         1.63977
+        70         377          71         0.000120718         1.89049
+        71         383          72         0.000120715         2.69623
+        72         389          73         0.000120711               3
+        73         394          74         0.000120709          1.1305
+        74         399          75         0.000120708         1.81118
+        75         405          76         0.000120705         3.49039
+        76         410          77         0.000120702         1.54076
+        77         416          78           0.0001207         2.38765
+        78         422          79         0.000120696         4.57342
+        79         427          80         0.000120695         1.39598
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 80
+        Function Count : 432
+        Minimum found : 0.00012069
+        Intern Time : 0.22857 seconds
+        Total Time : 71.1526 seconds
+Registration Refinement
+Current Grid size : 64x84
+     Iteration  Func-count   Grad-count         f(x)         Step-size
+         0           1           1         0.000210706    
+         1          15           2         0.000209319          195791
+         2          20           3         0.000208697         1.15925
+         3          26           4         0.000207854          3.7744
+         4          31           5         0.000207506         1.29257
+         5          36           6         0.000207212         1.30776
+         6          42           7         0.000206956         2.51734
+         7          47           8         0.000206761         1.82486
+         8          53           9         0.000206627         2.10902
+         9          60          11          0.00020646               3
+        10          66          12         0.000206318         2.44688
+        11          72          13         0.000206192         2.04559
+        12          78          14         0.000206088         2.20311
+        13          83          15         0.000206008         1.50225
+        14          89          16         0.000205942         2.03542
+        15          95          17         0.000205885         2.23266
+        16         101          18         0.000205834         2.09446
+        17         107          19         0.000205793         2.26818
+    Optimizer Results
+        Algorithm Used: limited memory BFGS (L-BFGS)
+        Exit message : Change in x was smaller than the specified tolerance TolX.
+        iterations : 18
+        Function Count : 112
+        Minimum found : 0.00020576
+        Intern Time : 0.14227 seconds
+        Total Time : 49.4665 seconds
+Elapsed time is 136.631232 seconds.
+lsqr stopped at iteration 20 without converging to the desired tolerance 0.02
+because the maximum number of iterations was reached.
+The iterate returned (number 20) has relative residual 0.076.
+lsqr converged at iteration 12 to a solution with relative residual 0.019.
+lsqr converged at iteration 7 to a solution with relative residual 0.018.
+lsqr converged at iteration 5 to a solution with relative residual 0.018.
+lsqr converged at iteration 3 to a solution with relative residual 0.02.
+lsqr converged at iteration 3 to a solution with relative residual 0.019.
+lsqr converged at iteration 3 to a solution with relative residual 0.019.
+lsqr converged at iteration 3 to a solution with relative residual 0.019.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 1 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.019.
+lsqr converged at iteration 1 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 1 to a solution with relative residual 0.02.
+The initial guess has relative residual 0.02 which is within
+the desired tolerance 0.02 so lsqr returned it without iterating.
+lsqr converged at iteration 2 to a solution with relative residual 0.019.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.019.
+lsqr converged at iteration 2 to a solution with relative residual 0.019.
+lsqr converged at iteration 1 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.019.
+lsqr converged at iteration 1 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 1 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 2 to a solution with relative residual 0.02.
+lsqr converged at iteration 1 to a solution with relative residual 0.02.
+
+ans =
+
+  109.3559
+
+>> 
