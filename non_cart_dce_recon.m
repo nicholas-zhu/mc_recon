@@ -3,8 +3,7 @@
 tic;
 clc;
 clear;
-addpath(genpath('../mc_recon'));
-%% addpath('../data');
+addpath(genpath('/working/larson/xzhu/code'));
 load nocart_dce_data.mat;
 load smap_dce.mat;
 smap = squeeze(readcfl('smap_dce'));
@@ -98,8 +97,8 @@ kdata_sort = permute(reshape(kdata_sort,size(k,1),...
 
 iter = 0;
 rho = 1;
-rho1 = 1;
-lambda = 0.2;
+rho1 = 2;
+lambda = 0.1;
 
 % E, TVx define
 %Bt = repmat(B,1,1,1,dce_state);
@@ -118,7 +117,8 @@ w = 2*w(:).*w_time;
 d = kdata_sort(:);
 A = @(x,flag)(E'*(w.*(E*x))+(rho+rho1)*x);
 Ad = E'*(w.*d);
-smooth = 0.1;
+writecfl('mc_dce1',reshape(Ad,sizeI2));
+smooth = 0.2;
 w = (w+smooth)/(1+smooth);
 
 % init
@@ -167,6 +167,6 @@ while(iter<=50)
     z1_k0 = z1_k1; 
 end
 
-writecfl('mc_dcekk1',x_k0);
+writecfl('mc_dcekk2',x_k0);
 time=toc;
 time/60
