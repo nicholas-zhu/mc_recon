@@ -12,8 +12,8 @@ else
 %         bx = b(:,:,:,[1,1:end-1]);
 %     end
     bx = b(:,:,:,[2:end,1]);
-    res(:,:,:,:,1) = b - bx;
-    res(:,:,:,:,2) = bx;
+    res(:,:,:,:,1) = bx - b;
+    res(:,:,:,:,2) = b;
 end
 
 function y = tranTV(b)

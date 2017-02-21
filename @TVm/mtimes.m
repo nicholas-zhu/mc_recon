@@ -22,8 +22,8 @@ else
         bt = sum((bt.*w),4)/w_s;
         bx(:,:,:,i) = bt;
     end
-    res(:,:,:,:,:,1) = b - bx;
-    res(:,:,:,:,:,2) = bx;
+    res(:,:,:,:,:,1) = bx - b;
+    res(:,:,:,:,:,2) = b;
 end
 
 function y = tranTV(b)
