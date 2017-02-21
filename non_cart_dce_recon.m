@@ -41,21 +41,21 @@ sizeI1 = size(I);
 sizeK = size(kdata_sort);
 x_k1 = reshape(Ad,sizeI1);
 
-writecfl('mc_dce',x_k1);
+writecfl('../mc_dce',x_k1);
 %%
-% I = single(squeeze(abs(x_k1)));
-% gamma = 2;
-% I = single(I);
-% I = I./max(I(:));
-% I = reshape(imadjust(I(:,:),[0,1],[0,1],gamma),size(I));
+I = single(squeeze(abs(x_k1)));
+gamma = 2;
+I = single(I);
+I = I./max(I(:));
+I = reshape(imadjust(I(:,:),[0,1],[0,1],gamma),size(I));
 
-% Options.Similarity = 'sd';
-% Options.Spacing = [16 16];
-% Options.Penalty = 1e-3;
-% Options.MaskMoving = (smap(:,:,1)>eps);
-% for i = 1:size(I,3)
-%     [Ireg(:,:,i),O_trans,Spacing,M,B(:,:,:,i),F(:,:,:,i)] = image_registration(I(:,:,i),I(:,:,1),Options);
-% end
+Options.Similarity = 'sd';
+Options.Spacing = [16 16];
+Options.Penalty = 1e-3;
+Options.MaskMoving = (smap(:,:,1)>eps);
+for i = 1:size(I,3)
+    [Ireg(:,:,i),O_trans,Spacing,M,B(:,:,:,i),F(:,:,:,i)] = image_registration(I(:,:,i),I(:,:,1),Options);
+end
 
 
 %% DCE recon
@@ -106,8 +106,8 @@ lambda = 0.1;
 %mTVx = TV2dm(Nbin,Bt,Ft);
 %mLRx = LR2d([6,6],Bt,Ft);
 %mTVx defined before
-%mTVx = TV2dx(B,F);
-mTVx = TV2do();
+mTVx = TV2dm(nbin,B,F);
+%mTVx = TV2do();
 mLRx = LR2dn([4,4]);
 w = ones(size(k_sort));
 E = NUFFTx(k_sort,w,double(b1));
@@ -167,6 +167,6 @@ while(iter<=50)
     z1_k0 = z1_k1; 
 end
 
-writecfl('mc_dcekk2',x_k0);
+writecfl('../mc_dcekk2',x_k0);
 time=toc;
 time/60
