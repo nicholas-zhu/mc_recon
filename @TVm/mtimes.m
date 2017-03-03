@@ -12,8 +12,8 @@ else
         bt = circshift(b,i-1,M_state);
         F = circshift(a.F,i-1,M_state);
         B = circshift(a.B,i-1,M_state);
-        B = B-repmat(B(:,:,:,:,1),1,1,1,size(B,M_state));
-        Fxy = movepixels_3d_grid(F,B,1);%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        Fz = F-repmat(F(:,:,:,:,1),1,1,1,size(F,M_state));
+        Fxy = movepixels_3d_grid(B,Fz,1);%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         w = ifftshift(a.w);
         w(1) = 0;
         w_s = sum(w);
@@ -22,8 +22,8 @@ else
         bt = sum((bt.*w),4)/w_s;
         bx(:,:,:,i) = bt;
     end
-    res(:,:,:,:,:,1) = bx - b;
-    res(:,:,:,:,:,2) = b;
+    res(:,:,:,:,:,1) = b - bx;
+    res(:,:,:,:,:,2) = bx;
 end
 
 function y = tranTV(b)

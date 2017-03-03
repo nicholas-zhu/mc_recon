@@ -52,11 +52,11 @@ I = I./max(I(:));
 I = reshape(imadjust(I(:,:),[0,1],[0,1],gamma),size(I));
 
 Options.Similarity = 'sd';
-Options.Spacing = [16 16];
+Options.Spacing = [32 32];
 Options.Penalty = 1e-3;
 Options.MaskMoving = (smap(:,:,1)>eps);
 for i = 1:size(I,3)
-    [Ireg(:,:,i),O_trans,Spacing,M,B(:,:,:,i),F(:,:,:,i)] = image_registration(I(:,:,i),I(:,:,end),Options);
+    [Ireg(:,:,i),O_trans,Spacing,M,B(:,:,:,i),F(:,:,:,i)] = image_registration(I(:,:,i),I(:,:,1),Options);
 end
 
 writecfl('temp',Ireg);
@@ -112,21 +112,21 @@ rho1 = 1;
 if(mc_flag)
 mTVx = TV2dm(nbin,B,F);
 else
-mTVx = TV2d(nbin);
+mTVx = TV2do();
 end
 mLRx = LR2dn([4,4]);
 w = ones(size(k_sort));
 E = NUFFTx(k_sort,w,double(b1));
 I = reshape(E'*kdata_sort,240,320,1,Nbin);
 w = repmat(abs(k_sort),1,1,size(b1,3),1);
-w = 2*w(:);
+w = 2*w(:).*w_time;
 d = kdata_sort(:);
 A = @(x,flag)(E'*(w.*(E*x))+(rho+rho1)*x);
 Ad = E'*(w.*d);
 writecfl('mc_dce1',reshape(Ad,sizeI2));
-smooth = 0.02;
+smooth = 0.2;
 w = (w+smooth)/(1+smooth);
-lambda = 0.15*sum(abs(Ad(:)))./sum(abs(Ad(:))>0);
+lambda = 0.05*sum(abs(Ad(:)))./sum(abs(Ad(:))>0);
 
 % init
 x_k0 = reshape(Ad,sizeI2);
@@ -140,11 +140,12 @@ z_k1 = zeros(sizeI2);
 u_k1 = zeros(sizeI2);
 z1_k1 = zeros(sizeI2);
 u1_k1 = zeros(sizeI2);
-while(iter<=30)
+%%
+while(iter<=50)
     iter = iter+1;
     % L2 opt conjugate gradient descent
     cg_iterM = 30;
-    tol = 5e-3;
+    tol = 2e-2;
     b = Ad + rho *(z_k0(:)-u_k0(:)) + rho1 *(z1_k0(:)-u1_k0(:));
     x_k1 = lsqr(A,b,tol,cg_iterM,[],[],x_k0(:));
     x_k1 = reshape(x_k1,sizeI2);
@@ -172,9 +173,9 @@ while(iter<=30)
     z_k0 = z_k1; 
     u1_k0 = u1_k1;
     z1_k0 = z1_k1;
-    writecfl('mc_dcekk5t',x_k0); 
+    writecfl('mc_dcekkt3',x_k0); 
 end
 
-writecfl('mc_dcekk1',x_k0);
+writecfl('mc_dcekk3',x_k0);
 time=toc;
 time/60
