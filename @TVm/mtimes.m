@@ -9,18 +9,17 @@ else
     M_state = 5;
     bx = zeros(size(b));
     for i = 1:size(b,M_state)
-        bt = circshift(b,i-1,M_state);
-        F = circshift(a.F,i-1,M_state);
-        B = circshift(a.B,i-1,M_state);
-        Fz = F-repmat(F(:,:,:,:,1),1,1,1,size(F,M_state));
-        Fxy = movepixels_3d_grid(B,Fz,1);%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        bt = circshift(b,1-i,M_state);
+        F = circshift(a.F,1-i,M_state);
+        B = circshift(a.B,1-i,M_state);
+        Bz = B-repmat(B(:,:,:,:,1),1,1,1,1,size(B,M_state));
+        Fxy = movepixels_3d_grid(F,Bz);%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         w = ifftshift(a.w);
-        w(1) = 0;
         w_s = sum(w);
         w = repmat(permute(w,[2,3,4,5,1]),size(b,1),size(b,2),size(b,3),1,1);
-        bt = movepixels_3d_cpx(bt,Fxy,1);
-        bt = sum((bt.*w),4)/w_s;
-        bx(:,:,:,i) = bt;
+        bt = movepixels_3d_cpx(bt,Fxy);
+        bt = sum((bt.*w),5)/w_s;
+        bx(:,:,:,1,i) = bt;
     end
     res(:,:,:,:,:,1) = b - bx;
     res(:,:,:,:,:,2) = bx;
